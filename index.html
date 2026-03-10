@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>FUOCO — Wood-Fired Pizza</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Abril+Fatface&family=DM+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-pizza">🍕</div>
+  <div class="loader-text">Loading the good stuff...</div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="trail"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">FUO<span>CO</span></a>
+  <ul class="nav-links">
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#specials">Specials</a></li>
+    <li><a href="#about">Our Story</a></li>
+    <li><a href="#footer" class="nav-order">Order Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-badge">🔥 Wood-Fired Since 1987</div>
+    <h1 class="hero-title">
+      <span class="outline">TASTE</span><br>
+      THE<br>
+      <span class="fire">FIRE</span>
+    </h1>
+    <p class="hero-sub">Authentic Neapolitan pizza baked at 900°F in our hand-built wood-burning oven. Every pie, a love letter to Naples.</p>
+    <div class="hero-buttons">
+      <a href="#menu" class="btn-primary"><span>See Our Menu</span></a>
+      <a href="#specials" class="btn-ghost">Today's Specials</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="pizza-wrap">
+      <div class="pizza-ring"><div class="ring-dot"></div></div>
+      <div class="pizza-ring"><div class="ring-dot"></div></div>
+      <div class="pizza-emoji" id="heroPizza">🍕</div>
+      <!-- Orbiting ingredients -->
+      <div class="ingredient-orbit" style="--start:0deg;   --r:220px; animation-duration:12s;">🧄</div>
+      <div class="ingredient-orbit" style="--start:60deg;  --r:220px; animation-duration:14s;">🍅</div>
+      <div class="ingredient-orbit" style="--start:120deg; --r:220px; animation-duration:10s;">🧀</div>
+      <div class="ingredient-orbit" style="--start:180deg; --r:220px; animation-duration:16s;">🌿</div>
+      <div class="ingredient-orbit" style="--start:240deg; --r:220px; animation-duration:11s;">🫒</div>
+      <div class="ingredient-orbit" style="--start:300deg; --r:220px; animation-duration:13s;">🌶️</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">Wood-Fired Pizza <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Hand-Tossed Dough <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">San Marzano Tomatoes <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Buffalo Mozzarella <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Fresh Basil <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">900°F Oven <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">72-Hour Ferment <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Neapolitan Style <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Wood-Fired Pizza <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Hand-Tossed Dough <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">San Marzano Tomatoes <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Buffalo Mozzarella <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Fresh Basil <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">900°F Oven <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">72-Hour Ferment <span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Neapolitan Style <span class="marquee-sep">✦</span></span>
+  </div>
+</div>
+
+<!-- MENU -->
+<section class="menu-section" id="menu">
+  <div class="menu-header reveal">
+    <div>
+      <h2 class="menu-title">Our <em>Classic</em><br>Pies</h2>
+    </div>
+    <p class="menu-subtitle">Crafted from tradition.<br>Fired with passion.</p>
+  </div>
+
+  <div class="pizza-grid">
+    <div class="pizza-card reveal delay-1">
+      <div class="card-emoji-wrap">
+        <span class="card-emoji">🍕</span>
+        <span class="card-badge">Best Seller</span>
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">Margherita</h3>
+        <div class="card-ingredients">
+          <span class="tag">San Marzano</span>
+          <span class="tag">Fior di Latte</span>
+          <span class="tag">Basil</span>
+        </div>
+        <p class="card-desc">The queen of all pizzas. Simple, honest, and devastatingly good.</p>
+        <div class="card-footer">
+          <span class="card-price">$14</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pizza-card reveal delay-2">
+      <div class="card-emoji-wrap">
+        <span class="card-emoji">🍕</span>
+        <span class="card-badge">Spicy</span>
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">Diavola</h3>
+        <div class="card-ingredients">
+          <span class="tag">Salame Piccante</span>
+          <span class="tag">Nduja</span>
+          <span class="tag">Calabrian Chilli</span>
+        </div>
+        <p class="card-desc">Fire-kissed and fierce. For those who like it dangerously spicy.</p>
+        <div class="card-footer">
+          <span class="card-price">$18</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pizza-card reveal delay-3">
+      <div class="card-emoji-wrap">
+        <span class="card-emoji">🍕</span>
+        <span class="card-badge">Chef's Pick</span>
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">Tartufo Nero</h3>
+        <div class="card-ingredients">
+          <span class="tag">Black Truffle</span>
+          <span class="tag">Taleggio</span>
+          <span class="tag">Rocket</span>
+        </div>
+        <p class="card-desc">Earthy, rich, and luxurious. A white-base pizza of rare distinction.</p>
+        <div class="card-footer">
+          <span class="card-price">$26</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pizza-card reveal delay-1">
+      <div class="card-emoji-wrap">
+        <span class="card-emoji">🍕</span>
+        <span class="card-badge">Veggie</span>
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">Ortolana</h3>
+        <div class="card-ingredients">
+          <span class="tag">Zucchini</span>
+          <span class="tag">Aubergine</span>
+          <span class="tag">Peppers</span>
+        </div>
+        <p class="card-desc">A garden roasted and charred, laid out on a pillow of cream ricotta.</p>
+        <div class="card-footer">
+          <span class="card-price">$17</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pizza-card reveal delay-2">
+      <div class="card-emoji-wrap">
+        <span class="card-emoji">🍕</span>
+        <span class="card-badge">New</span>
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">Burrata</h3>
+        <div class="card-ingredients">
+          <span class="tag">Burrata</span>
+          <span class="tag">Prosciutto</span>
+          <span class="tag">Fig</span>
+        </div>
+        <p class="card-desc">Sweet fig meets salty prosciutto beneath a cloud of fresh burrata.</p>
+        <div class="card-footer">
+          <span class="card-price">$22</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pizza-card reveal delay-3">
+      <div class="card-emoji-wrap">
+        <span class="card-emoji">🍕</span>
+        <span class="card-badge">Classic</span>
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">Quattro Formaggi</h3>
+        <div class="card-ingredients">
+          <span class="tag">Mozzarella</span>
+          <span class="tag">Gorgonzola</span>
+          <span class="tag">Pecorino</span>
+        </div>
+        <p class="card-desc">Four Italian cheeses melt into one glorious molten masterpiece.</p>
+        <div class="card-footer">
+          <span class="card-price">$20</span>
+          <button class="card-add">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALS -->
+<section class="specials" id="specials">
+  <div class="specials-inner">
+    <div class="specials-text">
+      <span class="tag-label">Tonight Only 🔥</span>
+      <h2 class="specials-title">Daily <span>Fire</span><br>Specials</h2>
+      <p class="specials-body">Each evening our pizzaiolo crafts limited-run specials using the finest seasonal ingredients flown in that morning.</p>
+      <ul class="special-list">
+        <div class="special-item reveal">
+          <span class="special-icon">🦞</span>
+          <div class="special-info">
+            <span class="special-name">Aragosta e Bottarga</span>
+            <span class="special-detail">Lobster · Cured roe · Lemon zest</span>
+          </div>
+          <span class="special-price">$38</span>
+        </div>
+        <div class="special-item reveal delay-1">
+          <span class="special-icon">🥩</span>
+          <div class="special-info">
+            <span class="special-name">Wagyu & Shaved Truffle</span>
+            <span class="special-detail">A5 Wagyu · Porcini · 36-month Parmigiano</span>
+          </div>
+          <span class="special-price">$45</span>
+        </div>
+        <div class="special-item reveal delay-2">
+          <span class="special-icon">🌸</span>
+          <div class="special-info">
+            <span class="special-name">Fiori di Zucca</span>
+            <span class="special-detail">Courgette flowers · Anchovy · Ricotta</span>
+          </div>
+          <span class="special-price">$24</span>
+        </div>
+      </ul>
+    </div>
+
+    <div class="fire-visual reveal">
+      <div class="oven-container">
+        <div class="fire-sparks" id="sparks"></div>
+        <span class="oven-emoji">🫕</span>
+      </div>
+      <div class="temp-badge">🌡️ Oven Temp: 900°F</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-text reveal">
+    <span class="tag-label">Est. 1987, Naples</span>
+    <h2 class="about-title">Born From<br><em>Tradition</em></h2>
+    <p class="about-body">Our founder, Enzo Fuoco, learned to stretch dough at age seven in his grandmother's kitchen in Napoli. Three generations later, the same 72-hour fermented dough recipe fires in our hand-built Valoriani oven every single day.</p>
+    <div class="stats-grid">
+      <div class="stat-box reveal">
+        <span class="stat-num">37</span>
+        <span class="stat-label">Years Firing</span>
+      </div>
+      <div class="stat-box reveal delay-1">
+        <span class="stat-num">900°</span>
+        <span class="stat-label">Oven Temp</span>
+      </div>
+      <div class="stat-box reveal delay-2">
+        <span class="stat-num">72h</span>
+        <span class="stat-label">Dough Ferment</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="wheel-wrap reveal">
+    <div class="wheel-center">🍕</div>
+    <div class="wheel-item" style="--base-pos: translate(-180px,-20px); transform: translate(-180px,-20px)">
+      <span class="wi-icon">🍅</span>
+      <span class="wi-label">Tomato</span>
+    </div>
+    <div class="wheel-item" style="--base-pos: translate(-90px,-170px); transform: translate(-90px,-170px)">
+      <span class="wi-icon">🧀</span>
+      <span class="wi-label">Cheese</span>
+    </div>
+    <div class="wheel-item" style="--base-pos: translate(90px,-170px); transform: translate(90px,-170px)">
+      <span class="wi-icon">🌿</span>
+      <span class="wi-label">Basil</span>
+    </div>
+    <div class="wheel-item" style="--base-pos: translate(180px,-20px); transform: translate(180px,-20px)">
+      <span class="wi-icon">🧄</span>
+      <span class="wi-label">Garlic</span>
+    </div>
+    <div class="wheel-item" style="--base-pos: translate(90px,160px); transform: translate(90px,160px)">
+      <span class="wi-icon">🌶️</span>
+      <span class="wi-label">Chilli</span>
+    </div>
+    <div class="wheel-item" style="--base-pos: translate(-90px,160px); transform: translate(-90px,160px)">
+      <span class="wi-icon">🫒</span>
+      <span class="wi-label">Olive</span>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2 class="test-header reveal">What They <span>Say</span></h2>
+  <p class="test-sub reveal">Real people. Real fire. Real love.</p>
+  <div class="reviews-grid">
+    <div class="review-card reveal delay-1">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"The Diavola nearly brought tears to my eyes. Not from the heat — from sheer joy. Best pizza in the city, full stop."</p>
+      <span class="review-author">— Marco V., Rome</span>
+    </div>
+    <div class="review-card reveal delay-2">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I flew back from Milan just to eat here again. The crust, the char, the cheese pull — I dream about it."</p>
+      <span class="review-author">— Sophia L., Milan</span>
+    </div>
+    <div class="review-card reveal delay-3">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Fuoco is an institution. The Truffle pie made me question every pizza I had eaten before. Absolutely transcendent."</p>
+      <span class="review-author">— James W., London</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div>
+      <a href="#" class="footer-logo">FUO<span>CO</span></a>
+      <p class="footer-tagline">Wood-fired Neapolitan pizza crafted from three generations of family obsession.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Menu</h4>
+      <a href="#">Classic Pies</a>
+      <a href="#">Daily Specials</a>
+      <a href="#">Desserts</a>
+      <a href="#">Drinks</a>
+    </div>
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <p>Mon–Thu &nbsp; 12–10pm</p>
+      <p>Fri–Sat &nbsp; 12–11pm</p>
+      <p>Sunday &nbsp; 12–9pm</p>
+    </div>
+    <div class="footer-col">
+      <h4>Find Us</h4>
+      <p>28 Via Napoletana</p>
+      <p>The Old Quarter</p>
+      <p>+44 20 7946 0958</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Fuoco Pizza. All rights reserved.</p>
+    <span class="pizza-spin-small">🍕</span>
+    <p>Made with fire & love</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
